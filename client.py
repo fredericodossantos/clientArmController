@@ -9,7 +9,7 @@ client_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 client_socket.connect((ip, port))
 
 # Send a "rotate" command to the server
-command = "rotate Arm_1 30 45"
+command = "rotate Arm_1 30 45 60 0.5"
 client_socket.sendall(command.encode())
 
 # Wait for a response from the server (optional)
